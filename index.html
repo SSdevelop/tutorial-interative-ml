@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Regression</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <div id="chart" class="col-md-10 col-lg-10 col-xl-10">
+        <div class="row">
+            <div class="col-12 p-1" style="text-align: center;">
+                <h5 id="chart-sse"></h5>
+            </div>
+        </div>
+        <div class="row">
+            <div id="chart-graph" style="height: 22em;" class="col-12 p-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 p-1">
+                <div style="text-align: center;"><a id="chart-bslider-math"></a></div>
+                <div id="chart-bslider"></div>
+            </div>
+            <div class="col-12 col-md-6 p-1">
+                <div style="text-align: center;"><a id="chart-mslider-math"></a></div>
+                <div id="chart-mslider"></div>
+            </div>
+            <div class="col-12 p-1" style="text-align: center;">
+                <!-- <button class="btn btn-primary" id='chart-fresh-data'>Fresh data</button> -->
+                <button class="btn btn-primary chart-best-fit">Best fit</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="https://unpkg.com/d3-3d/build/d3-3d.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://unpkg.com/d3-simple-slider@1.10.4/dist/d3-simple-slider.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
